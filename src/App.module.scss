@@ -1,0 +1,11 @@
+@use "common/styles/colors" as c;
+@use "common/styles/fonts" as f;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: c.$primary-background;
+}

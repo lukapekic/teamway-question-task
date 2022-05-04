@@ -1,0 +1,17 @@
+@use "src/common/styles/fonts" as f;
+@use "src/common/styles/colors" as c;
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: f.$font-primary;
+  color: c.$primary-text;
+} 
+
+h1 {
+  font-size: 2rem;
+}

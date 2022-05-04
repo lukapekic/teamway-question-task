@@ -1,0 +1,17 @@
+.question__wrapper {
+    max-width: 40rem;
+}
+
+.action__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+    & > * {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+}

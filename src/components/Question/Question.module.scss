@@ -1,0 +1,40 @@
+@use "src/common/styles/colors" as c;
+@use "src/common/styles/fonts" as f;
+
+.question {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+
+    &--disabled {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.answers {
+    &__wrapper {
+        border-radius: 0.25rem;
+        padding: 1.5rem;
+        background-color: rgba(c.$tertiary-background, 0.25);
+    }
+
+    &__item {
+        list-style: none;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        
+        color: c.$primary-text;
+        font-family: f.$font-secondary;
+        
+        font-size: 0.75rem;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        background-color: rgba(c.$secondary-background, 0.25);
+        transition: background-color 0.3s ease-in-out;
+        
+
+        &--active {
+            background-color: c.$secondary-background;
+        }
+    }
+}
